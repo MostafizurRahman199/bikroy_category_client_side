@@ -24,7 +24,7 @@ import PaymentHistory from "../pages/Dashboard/PaymentHistory/PaymentHistory";
 import AdminHome from "../pages/Dashboard/AdminHome/AdminHome";
 import AddReview from "../pages/Dashboard/AddReview/AddReview";
 import PaymentParent from "../pages/Dashboard/Payment/PaymentParent";
-import ManageProductTitle from "../components/Home/ManageProductTitle/ManageProductTitle";
+import ManageProductTitle from "../pages/Dashboard/ManageProductTitle/ManageProductTitle";
 
 const router = createBrowserRouter([
   {
