@@ -25,35 +25,6 @@ const Folder = () => (
   </svg>
 );
 
-// const TreeNode = ({ node, level = 0 }) => {
-//   const [expanded, setExpanded] = useState(false);
-
-//   return (
-//     <div className="ml-4 mt-2">
-//       <div
-//         className="flex items-center gap-2 cursor-pointer hover:bg-gray-100 px-2 py-1 rounded transition"
-//         onClick={() => setExpanded(!expanded)}
-//       >
-//         {node.children.length > 0 ? (
-//           expanded ? <ChevronDown /> : <ChevronRight />
-//         ) : (
-//           <div className="w-4 h-4" /> // Empty space to align
-//         )}
-//         <Folder />
-//         <span
-//           className="font-semibold text-gray-800"
-//           style={{ marginLeft: `${level * 8}px` }}
-//         >
-//           {node.name}
-//         </span>
-//       </div>
-//       {expanded &&
-//         node.children.map((child) => (
-//           <TreeNode key={child._id} node={child} level={level + 1} />
-//         ))}
-//     </div>
-//   );
-// };
 
 
 const TreeNode = ({ node, level = 0, refreshTree }) => {
@@ -113,12 +84,7 @@ const TreeNode = ({ node, level = 0, refreshTree }) => {
           <Folder />
   
           {/* Category name */}
-          {/* <span
-            className="font-semibold text-gray-800 flex-1"
-            style={{ marginLeft: `${level * 8}px` }}
-          >
-            {node.name}
-          </span> */}
+  
 
 
                 <div className="flex-1" style={{ marginLeft: `${level * 8}px` }}>
@@ -157,19 +123,7 @@ const TreeNode = ({ node, level = 0, refreshTree }) => {
                 ⋮
               </button>
   
-              {/* {showOptions && (
-                <div className="absolute right-0 mt-2 bg-white border rounded shadow p-2 z-10">
-                  <button
-                    onClick={() => {
-                      setShowDeleteConfirm(true);
-                      setShowOptions(false);
-                    }}
-                    className="text-red-600 hover:underline"
-                  >
-                    Delete
-                  </button>
-                </div>
-              )} */}
+      
 
 
                     {showOptions && (
