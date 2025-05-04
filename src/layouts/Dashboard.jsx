@@ -16,6 +16,7 @@ import {
   FaClipboardList,
   FaUsers,
   FaPhone,
+  FaTree,
 } from "react-icons/fa";
 import { Outlet, NavLink } from "react-router-dom";
 import useUserRole from "../hooks/useUserRole";
@@ -43,7 +44,8 @@ const Dashboard = () => {
     // { to: "/dashboard/add-menu-item", label: "Add Items", icon: <FaPlusSquare /> },
     // { to: "/dashboard/manage-items", label: "Manage Items", icon: <FaTasks /> },
     { to: "/dashboard/manage-product-title", label: "Manage Product Title", icon: <FaTasks /> },
-    { to: "/dashboard/see-category-tree", label: "See All Categories", icon: <FaTasks /> },
+    { to: "/dashboard/see-category-tree", label: "See All Categories", icon:<FaTree />
+     },
     // { to: "/dashboard/manage-bookings", label: "Manage Bookings", icon: <FaClipboardList /> },
     { to: "/dashboard/all-users", label: "All Users", icon: <FaUsers /> },
     { to: "/", label: "Home", icon: <FaHome />, isDivider: true },
@@ -65,7 +67,7 @@ const Dashboard = () => {
           className={({ isActive }) =>
             `new_heading_font text-xl flex items-center space-x-2 transition-all duration-300 hover:text-black ${
               isActive
-                ? "text-black bg-[#d5d3d3] p-2 rounded-xl font-semibold hover:text-[#d1a054]"
+                ? "text-black bg-[#d5d3d3] p-2 rounded-xl font-semibold hover:text-[#149777]"
                 : "text-gray-800"
             }`
           }
@@ -98,7 +100,7 @@ const Dashboard = () => {
           </nav>
           <button
             onClick={handleSidebarToggle}
-            className="mt-8 text-white bg-[#d1a054] p-2 rounded-lg w-full text-center"
+            className="mt-8 text-white bg-[#149777] p-2 rounded-lg w-full text-center"
           >
             Close Sidebar
           </button>

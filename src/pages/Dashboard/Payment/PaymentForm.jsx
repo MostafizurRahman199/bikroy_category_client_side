@@ -215,7 +215,7 @@ const {error, paymentMethod} = await stripe.createPaymentMethod({
       <button
         type="submit"
         disabled={!stripe || isProcessing}
-        className={`w-full bg-[#d1a054] hover:bg-[#dc9832] text-white font-bold py-3 rounded-md transition duration-300 ${
+        className={`w-full bg-[#149777] hover:bg-[#dc9832] text-white font-bold py-3 rounded-md transition duration-300 ${
           isProcessing ? "opacity-50 cursor-not-allowed" : ""
         }`}
       >

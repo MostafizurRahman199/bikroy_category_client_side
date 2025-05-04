@@ -47,7 +47,7 @@ const ItemTable = ({ menuData, handleModalOpen, handleDelete }) => {
               <td className="py-4 px-4 text-center ">
               <button
                   onClick={() => handleModalOpen(item)}
-                  className="bg-[#d1a054] btn hover:bg-[#d68916] text-xl text-white"
+                  className="bg-[#149777] btn hover:bg-[#d68916] text-xl text-white"
                 >
           
                  <FaRegEdit />
@@ -96,7 +96,7 @@ const ItemTable = ({ menuData, handleModalOpen, handleDelete }) => {
          <div>
          <button
                   onClick={() => handleModalOpen(item)}
-                  className="bg-[#d1a054] btn hover:bg-[#d68916] text-xl text-white"
+                  className="bg-[#149777] btn hover:bg-[#d68916] text-xl text-white"
                 >
           
                  <FaRegEdit />

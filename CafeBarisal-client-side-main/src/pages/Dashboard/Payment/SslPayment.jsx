@@ -52,7 +52,7 @@ const SslPayment = () => {
 
   return (
     <div className="p-6 rounded-2xl shadow-lg border border-gray-200 bg-white w-full max-w-md mx-auto">
-      <h2 className="text-lg font-bold text-center mb-4" style={{ color: '#d1a054' }}>
+      <h2 className="text-lg font-bold text-center mb-4" style={{ color: '#149777' }}>
         SSL Payment
       </h2>
       <div className="mb-4">
@@ -64,7 +64,7 @@ const SslPayment = () => {
           id="email"
           value={email || 'not found'}
           readOnly
-          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#d1a054]"
+          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#149777]"
         />
       </div>
       <div className="mb-4">
@@ -76,12 +76,12 @@ const SslPayment = () => {
           id="amount"
           value={`$${totalPrice || 0}`}
           readOnly
-          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#d1a054]"
+          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#149777]"
         />
       </div>
       <button
         onClick={handlePayment}
-        className="w-full py-2 px-4 bg-[#d1a054] text-white font-semibold rounded-lg shadow-md hover:bg-[#b58f45] transition-colors duration-300"
+        className="w-full py-2 px-4 bg-[#149777] text-white font-semibold rounded-lg shadow-md hover:bg-[#b58f45] transition-colors duration-300"
       >
         Create Payment
       </button>

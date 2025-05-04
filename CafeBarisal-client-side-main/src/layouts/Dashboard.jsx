@@ -94,7 +94,7 @@ import React from "react";
 //                   className={({ isActive }) =>
 //                     `new_heading_font text-xl flex items-center space-x-2 transition-all duration-300 hover:text-black ${
 //                       isActive
-//                         ? "text-black bg-[#d5d3d3] p-2 rounded-xl font-semibold hover:text-[#d1a054]"
+//                         ? "text-black bg-[#d5d3d3] p-2 rounded-xl font-semibold hover:text-[#149777]"
 //                         : "text-gray-800"
 //                     }`
 //                   }
@@ -115,7 +115,7 @@ import React from "react";
 //                   className={({ isActive }) =>
 //                     `new_heading_font text-xl flex items-center space-x-2 transition-all duration-300 hover:text-black ${
 //                       isActive
-//                         ? "text-black bg-[#d5d3d3] p-2 rounded-xl font-semibold hover:text-[#d1a054]"
+//                         ? "text-black bg-[#d5d3d3] p-2 rounded-xl font-semibold hover:text-[#149777]"
 //                         : "text-gray-800"
 //                     }`
 //                   }
@@ -204,7 +204,7 @@ const Dashboard = () => {
           className={({ isActive }) =>
             `new_heading_font text-xl flex items-center space-x-2 transition-all duration-300 hover:text-black ${
               isActive
-                ? "text-black bg-[#d5d3d3] p-2 rounded-xl font-semibold hover:text-[#d1a054]"
+                ? "text-black bg-[#d5d3d3] p-2 rounded-xl font-semibold hover:text-[#149777]"
                 : "text-gray-800"
             }`
           }
@@ -237,7 +237,7 @@ const Dashboard = () => {
           </nav>
           <button
             onClick={handleSidebarToggle}
-            className="mt-8 text-white bg-[#d1a054] p-2 rounded-lg w-full text-center"
+            className="mt-8 text-white bg-[#149777] p-2 rounded-lg w-full text-center"
           >
             Close Sidebar
           </button>

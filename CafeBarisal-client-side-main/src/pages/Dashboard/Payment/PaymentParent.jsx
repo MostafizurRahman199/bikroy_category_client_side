@@ -18,7 +18,7 @@ const PaymentParent = () => {
             onClick={() => setIsSslPayment(true)}
             className={`px-4 py-2 font-semibold rounded-lg shadow-md transition-colors duration-300 ${
               isSslPayment
-                ? "bg-[#d1a054] text-white"
+                ? "bg-[#149777] text-white"
                 : "bg-gray-200 text-gray-700"
             }`}
           >
@@ -28,7 +28,7 @@ const PaymentParent = () => {
             onClick={() => setIsSslPayment(false)}
             className={`px-4 py-2 font-semibold rounded-lg shadow-md transition-colors duration-300 ${
               !isSslPayment
-                ? "bg-[#d1a054] text-white"
+                ? "bg-[#149777] text-white"
                 : "bg-gray-200 text-gray-700"
             }`}
           >

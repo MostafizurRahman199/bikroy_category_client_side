@@ -54,7 +54,7 @@
 //             value={recipe.name}
 //             onChange={handleChange}
 //             placeholder="Recipe name"
-//             className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#d1a054]"
+//             className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#149777]"
 //             required
 //           />
 //         </div>
@@ -72,7 +72,7 @@
 //               name="category"
 //               value={recipe.category}
 //               onChange={handleChange}
-//               className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#d1a054]"
+//               className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#149777]"
 //               required
 //             >
 //               <option value="">Select category</option>
@@ -99,7 +99,7 @@
 //               value={recipe.price}
 //               onChange={handleChange}
 //               placeholder="Price"
-//               className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#d1a054]"
+//               className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#149777]"
 //               required
 //             />
 //           </div>
@@ -118,7 +118,7 @@
 //             value={recipe.recipe}
 //             onChange={handleChange}
 //             placeholder="Recipe Details"
-//             className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#d1a054]"
+//             className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#149777]"
 //             rows="3"
 //             required
 //           ></textarea>
@@ -144,7 +144,7 @@
 //         <div className="flex justify-start">
 //           <button
 //             type="submit"
-//             className="w-fit flex gap-1 items-center bg-[#d1a054] text-white py-2 px-4 hover:bg-[#c69141] focus:outline-none focus:ring-2 focus:ring-[#d1a054]"
+//             className="w-fit flex gap-1 items-center bg-[#149777] text-white py-2 px-4 hover:bg-[#c69141] focus:outline-none focus:ring-2 focus:ring-[#149777]"
 //           >
 //             <p>Add Item</p>
 //             <ImSpoonKnife />
@@ -324,7 +324,7 @@ const AddMenuItem = () => {
             value={recipe.name}
             onChange={handleChange}
             placeholder="Recipe name"
-            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#d1a054]"
+            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#149777]"
             required
           />
         </div>
@@ -342,7 +342,7 @@ const AddMenuItem = () => {
               name="category"
               value={recipe.category}
               onChange={handleChange}
-              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#d1a054]"
+              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#149777]"
               required
             >
               <option value="">Select category</option>
@@ -369,7 +369,7 @@ const AddMenuItem = () => {
               value={recipe.price}
               onChange={handleChange}
               placeholder="Price"
-              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#d1a054]"
+              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#149777]"
               required
             />
           </div>
@@ -388,7 +388,7 @@ const AddMenuItem = () => {
             value={recipe.recipe}
             onChange={handleChange}
             placeholder="Recipe Details"
-            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#d1a054]"
+            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#149777]"
             rows="3"
             required
           ></textarea>
@@ -415,7 +415,7 @@ const AddMenuItem = () => {
          
           <button
           type="submit"
-          className="w-fit flex gap-1 items-center bg-[#d1a054] text-white py-2 px-4 hover:bg-[#c69141] focus:outline-none focus:ring-2 focus:ring-[#d1a054]"
+          className="w-fit flex gap-1 items-center bg-[#149777] text-white py-2 px-4 hover:bg-[#c69141] focus:outline-none focus:ring-2 focus:ring-[#149777]"
         >
           <p>Add Item</p>
           {
