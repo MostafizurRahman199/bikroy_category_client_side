@@ -25,6 +25,7 @@ import AdminHome from "../pages/Dashboard/AdminHome/AdminHome";
 import AddReview from "../pages/Dashboard/AddReview/AddReview";
 import PaymentParent from "../pages/Dashboard/Payment/PaymentParent";
 import ManageProductTitle from "../pages/Dashboard/ManageProductTitle/ManageProductTitle";
+import SeeCategoryTress from "../pages/Dashboard/SeeCategoryTress/SeeCategoryTress";
 
 const router = createBrowserRouter([
   {
@@ -201,10 +202,23 @@ const router = createBrowserRouter([
         element: (
           <>
             <Helmet>
-              <title>CafeBarisal - Manage Product Title</title>
+              <title>Bikroy - Manage Product Title</title>
             </Helmet>
             <AdminRoute>
               <ManageProductTitle></ManageProductTitle>
+            </AdminRoute>
+          </>
+        ), // Explicit route for /dashboard/user-home
+      },
+      {
+        path: "see-category-tree",
+        element: (
+          <>
+            <Helmet>
+              <title>Bikroy - All Category</title>
+            </Helmet>
+            <AdminRoute>
+              <SeeCategoryTress></SeeCategoryTress>
             </AdminRoute>
           </>
         ), // Explicit route for /dashboard/user-home

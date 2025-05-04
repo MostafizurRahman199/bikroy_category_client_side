@@ -43,6 +43,7 @@ const Dashboard = () => {
     // { to: "/dashboard/add-menu-item", label: "Add Items", icon: <FaPlusSquare /> },
     // { to: "/dashboard/manage-items", label: "Manage Items", icon: <FaTasks /> },
     { to: "/dashboard/manage-product-title", label: "Manage Product Title", icon: <FaTasks /> },
+    { to: "/dashboard/see-category-tree", label: "See All Categories", icon: <FaTasks /> },
     // { to: "/dashboard/manage-bookings", label: "Manage Bookings", icon: <FaClipboardList /> },
     { to: "/dashboard/all-users", label: "All Users", icon: <FaUsers /> },
     { to: "/", label: "Home", icon: <FaHome />, isDivider: true },
