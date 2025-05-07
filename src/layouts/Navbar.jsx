@@ -55,21 +55,6 @@ const Navbar = () => {
 
 
 
-  // ___________________________link style helper
-
-  // const getLinkStyle = (path) => `
-  //   relative px-2  py-2 text-sm font-medium transition-colors duration-200
-  //   ${activeLink === path 
-  //     ? 'text-white' 
-  //     : 'text-gray-700 hover:text-white'
-  //   }
-  //   before:absolute before:bottom-0 before:left-0 before:w-full before:h-0.5 
-  //   before:bg-white before:transform before:scale-x-0 before:transition-transform
-  //   before:duration-300 hover:before:scale-x-100
-  //   ${activeLink === path ? 'before:scale-x-100' : ''}
-  // `;
-
-
     const getLinkStyle = (path) => `
     relative px-2 py-2 text-sm font-bold  font_header transition-colors duration-200
     ${activeLink === path ? 'text-white' : `${darkMode == true ? "text-white" : "text-white"} hover:text-white`}
@@ -81,23 +66,12 @@ const Navbar = () => {
 
 
 
-  // useEffect(() => {
-  //   setActiveLink(location.pathname);
-  // }, [location]);
 
 
   // Check if the current route falls under the "My Profile" section
   const isProfileActive = ["/my-profile", "/post-for-volunteer", "/ManageMyPostRequest"].includes(activeLink);
 
-  // Function to get the style for a link
-  // const getLinkStyle = (path) => `
-  //   relative px-2 py-2 text-sm font-bold font_header transition-colors duration-200
-  //   ${activeLink === path ? "text-white" : "text-black hover:text-white"}
-  //   before:absolute before:bottom-0 before:left-0 before:w-full before:h-0.5
-  //   before:bg-white before:transform before:scale-x-0 before:transition-transform
-  //   before:duration-300 hover:before:scale-x-100
-  //   ${activeLink === path ? "before:scale-x-100" : ""}
-  // `;
+
 
 
 
@@ -154,18 +128,7 @@ const Navbar = () => {
     // const [imageUrl, setImageUrl] = React.useState(null);
 
     const imageUrl = !imageError ? getProfileImage(user) : 'https://cdn-icons-png.flaticon.com/512/3135/3135715.png';
-    // console.log(imageUrl);
-
-
-
-    // const imageUrl =   getProfileImage(user) ;
-
-    // useEffect(() => {
-    //   setImageUrl(getProfileImage(user));
-    // }, [user]);
-
-    // setImageUrl(user?.photoURL);
-    // console.log(imageUrl);
+ 
 
     return (
 
@@ -190,7 +153,7 @@ const Navbar = () => {
 
 
   return (
-    <nav className={`font_header ${darkMode == true ? "bg-black/10 text-white" : "bg-black/50 text-white"} backdrop-blur-md fixed  shadow-lg w-full top-0 z-50`}>
+    <nav className={`font_header ${darkMode == true ? "bg-[#009877] text-white" : "bg-[#009877] text-white"} backdrop-blur-md fixed  shadow-lg w-full top-0 z-50`}>
       <div className="w-full mx-auto px-2 sm:px-2 lg:px-2">
         <div className="flex justify-between items-center h-16">
        
@@ -198,8 +161,8 @@ const Navbar = () => {
             <Link to="/" className="flex items-center  space-x-1">
              
              
-              <span className="new_heading_font text-3xl sm:text-3xl md:text-xl lg:text-3xl text-md font-bold bg-gradient-to-r from-white to-[#151515] bg-clip-text text-transparent truncate">
-              CafeBarisal
+              <span className="new_heading_font text-3xl sm:text-3xl md:text-xl lg:text-3xl text-md font-bold bg-gradient-to-r from-white to-[#a4a2a2] bg-clip-text text-transparent truncate">
+                Bikroy Category
               </span>
             </Link>
 
@@ -220,19 +183,7 @@ const Navbar = () => {
             <FaHome className="lg:inline-block mr-1" /> Home
           </Link>
           
-          <Link to="/menu" className={getLinkStyle('/menu')} onClick={() => setActiveLink('/menu')}>
-            <MdMenuBook className="lg:inline-block mr-1" />
-             Menu
-          </Link>
-
-          <Link to="/order/:category" className={getLinkStyle('/order/:category')} onClick={() => setActiveLink('/order/:category')}>
-            <MdMenuBook className="lg:inline-block mr-1" />
-             Order Food
-          </Link>
-          <Link to="/contact" className={getLinkStyle('/contact')} onClick={() => setActiveLink('/contact')}>
-            <MdMenuBook className="lg:inline-block mr-1" />
-             Contact
-          </Link>
+         
 
          
 
@@ -252,85 +203,6 @@ const Navbar = () => {
      
 
         
-
-          {/* <Link to="/post-for-volunteer" className={getLinkStyle('/post-for-volunteer')} onClick={() => setActiveLink('/post-for-volunteer')}>
-            <VscOpenPreview className="lg:inline-block mr-1"/> Post for volunteer 
-          </Link>
-
-
-          <Link to="/ManageMyPostRequest" className={getLinkStyle('/ManageMyPostRequest')} onClick={() => setActiveLink('/ManageMyPostRequest')}>
-            <VscOpenPreview className="lg:inline-block mr-1"/> My Volunteer Need Post
-          </Link> */}
-
-      
-
-            {/* <div   className={`dropdown dropdown-bottom ${getLinkStyle('/my-profile')}`} onClick={() => setActiveLink('/my-profile')}>
-            <div tabIndex={0} role="button" className="">My Profile</div>
-            <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
-             
-              <li className={`my-1`}
-             
-              ><Link to={"/post-for-volunteer"}>Add Volunteer need Post</Link></li>
-
-              <li className={`my-1`}
-        
-              
-              ><Link to={"/ManageMyPostRequest"}>Manage My Posts </Link></li>
-            </ul>
-          </div> */}
-
-
-        {/* <div className={`dropdown dropdown-bottom ${isProfileActive ? "active-class" : ""}`}>
-            <div
-              tabIndex={0}
-              role="button"
-              className={`px-4 py-2 cursor-pointer ${
-                isProfileActive ? `text-white border-b-[3px] border-white` : ` hover:text-white  ${darkMode == true ? "text-white" : "text-black"}`
-              }`}
-              onClick={() => setActiveLink("/my-profile")}
-            >
-              My Profile
-            </div>
-            <ul
-              tabIndex={0}
-              className={`dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow ${darkMode == true ? "text-white bg-black" : "text-black bg-white"}`}
-            >
-              <li className="my-1 ">
-                <Link
-                  to="/post-for-volunteer"
-                  className={getLinkStyle("/post-for-volunteer")}
-                >
-                  Add Volunteer Need Post
-                </Link>
-              </li>
-              <li className="my-1">
-                <Link
-                  to="/ManageMyPostRequest"
-                  className={getLinkStyle("/ManageMyPostRequest")}
-                >
-                  Manage My Posts
-                </Link>
-              </li>
-              <li className="my-1">
-                <Link
-                  to="/received-request"
-                  className={getLinkStyle("/received-request")}
-                >
-                  Received Request
-                </Link>
-              </li>
-              <li className="my-1">
-                <Link
-                  to="/my-saved-post"
-                  className={getLinkStyle("/my-saved-post")}
-                >
-                  Saved Post
-                </Link>
-              </li>
-            </ul>
-          </div> */}
-
-          <AddToCardBadge></AddToCardBadge>
 
           {
             !user && <>
@@ -390,13 +262,7 @@ const Navbar = () => {
           ) : (
             <>
            
-            {/* <Link to="/login" className={getLinkStyle('/login')} onClick={() => setActiveLink('/login')}>
-            <FaHome className="lg:inline-block mr-1" /> Login
-           </Link>
           
-            <Link to="/register" className={getLinkStyle('/register')} onClick={() => setActiveLink('/register')}>
-            <FaHome className="lg:inline-block mr-1" /> Register
-           </Link> */}
             </>
           )}
        </div>
@@ -462,67 +328,17 @@ const Navbar = () => {
            
           </Link>
 
-          <Link 
-            to="/all-post-volunteer" 
-            className={`block ${getLinkStyle('/all-post-volunteer')}`}
-            onClick={() => {
-              setActiveLink('/all-post-volunteer');
-              setIsMobileMenuOpen(false);
-            }}
-          >
-             <VscOpenPreview className="inline-block mr-1" /> All Post
-          </Link>
+         
 
 
-           <Link 
-            to="/post-for-volunteer" 
-            className={`block ${getLinkStyle('/post-for-volunteer')}`}
-            onClick={() => {
-              setActiveLink('//post-for-volunteer');
-              setIsMobileMenuOpen(false);
-            }}
-          >
-             <MdAddBox className="inline-block mr-1"/> Add Post
-          </Link>
+       
 
 
-           <Link 
-            to="/ManageMyPostRequest" 
-            className={`block ${getLinkStyle('/ManageMyPostRequest')}`}
-            onClick={() => {
-              setActiveLink('/ManageMyPostRequest');
-              setIsMobileMenuOpen(false);
-            }}
-          >
-            <FaUser className="inline-block mr-1" /> Manage My Post
-          </Link>
-          
+         
         
 
-           <Link 
-            to="/received-request" 
-            className={`block ${getLinkStyle('/received-request')}`}
-            onClick={() => {
-              setActiveLink('/received-request');
-              setIsMobileMenuOpen(false);
-            }}
-          >
-       
-          <RiUserReceivedLine  className="inline-block mr-1"/>
-           Received Request
-          </Link>
-           
-           <Link 
-            to="/my-saved-post" 
-            className={`block ${getLinkStyle('/my-saved-post')}`}
-            onClick={() => {
-              setActiveLink('/my-saved-post');
-              setIsMobileMenuOpen(false);
-            }}
-          >
-          <FaRegSave className="inline-block mr-1" />
-           Saved Post
-          </Link>
+          
+          
          
   
 

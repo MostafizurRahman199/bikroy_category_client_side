@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import Swal from 'sweetalert2';
+const url = import.meta.env.VITE_API_BASE_URL;
 
 const ManageProductTitle = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -10,11 +11,12 @@ const ManageProductTitle = () => {
   const [children, setChildren] = useState([]);
   const [newL1, setNewL1] = useState('');
   const [newTitle, setNewTitle] = useState('');
-  const url = "http://localhost:5000/api/categories"
+
+  // const url = "http://localhost:5000/api/categories"
 
   const fetchCategory = async () => {
     try {
-      const res = await axios.get(`${url}/${searchTerm.trim().toLowerCase()}`);
+      const res = await axios.get(`${url}/api/categories/${searchTerm.trim().toLowerCase()}`);
       setCategory(res.data.parent);
       setChildren(res.data.children);
     } catch (err) {
@@ -26,7 +28,7 @@ const ManageProductTitle = () => {
 
   const createL1Category = async () => {
     if (!newL1) return;
-    await axios.post(`${url}`, {
+    await axios.post(`${url}/api/categories`, {
       name: newL1.toLowerCase(),
     });
     setNewL1('');
@@ -35,7 +37,7 @@ const ManageProductTitle = () => {
 
   const createChild = async () => {
     if (!newTitle || !category) return;
-    await axios.post(`${url}`, {
+    await axios.post(`${url}/api/categories`, {
       name: newTitle.toLowerCase(),
       parentId: category._id,
     });
@@ -50,7 +52,7 @@ const ManageProductTitle = () => {
   };
 
   const updateChild = async (id, name) => {
-    await axios.put(`${url}/${id}`, { name });
+    await axios.put(`${url}/api/categories/${id}`, { name });
     fetchCategory();
     Swal.fire({
       icon: 'success',
@@ -77,7 +79,7 @@ const ManageProductTitle = () => {
   
     if (result.isConfirmed) {
       try {
-        await axios.delete(`${url}/${id}`);
+        await axios.delete(`${url}/api/categories/${id}`);
         fetchCategory();
         Swal.fire('Deleted!', 'The item has been deleted.', 'success');
       } catch (error) {

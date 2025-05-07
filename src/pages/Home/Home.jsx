@@ -12,6 +12,7 @@ import image1 from "../../../public/menu/dessert-bg.jpeg"
 import image2 from "../../../public/menu/pizza-bg.jpg"
 import image3 from "../../../public/menu/salad-bg.jpg"
 import image4 from "../../../public/menu/soup-bg.jpg"
+import SearchCategory from '../../components/Home/SearchCategory/SearchCategory'
 
 
 const Home = () => {
@@ -28,17 +29,19 @@ const Home = () => {
 
   return (
     <div  className='min-h-screen'>
-       <BannerNew></BannerNew>
-       <div className='h-[200px]'> 
+       {/* <BannerNew></BannerNew> */}
+       <div className='h-[100px]'> 
        </div>
 
-       <CategorySwiper></CategorySwiper>
+       <SearchCategory></SearchCategory>
+
+       {/* <CategorySwiper></CategorySwiper>
        <BistroBoss></BistroBoss>
        <Menu ></Menu>
        <Contact></Contact>
        <CardRecomends></CardRecomends>
        <FromOurMenu></FromOurMenu>
-       <TestimonialSlider></TestimonialSlider>
+       <TestimonialSlider></TestimonialSlider> */}
     </div>
   )
 }

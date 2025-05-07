@@ -40,7 +40,7 @@ const Dashboard = () => {
   ];
 
   const AdminLinks = [
-    { to: "/dashboard/admin-home", label: "Dashboard Home", icon: <FaHome /> },
+    // { to: "/dashboard/admin-home", label: "Dashboard Home", icon: <FaHome /> },
     // { to: "/dashboard/add-menu-item", label: "Add Items", icon: <FaPlusSquare /> },
     // { to: "/dashboard/manage-items", label: "Manage Items", icon: <FaTasks /> },
     { to: "/dashboard/manage-product-title", label: "Manage Product Title", icon: <FaTasks /> },
@@ -49,9 +49,9 @@ const Dashboard = () => {
     // { to: "/dashboard/manage-bookings", label: "Manage Bookings", icon: <FaClipboardList /> },
     { to: "/dashboard/all-users", label: "All Users", icon: <FaUsers /> },
     { to: "/", label: "Home", icon: <FaHome />, isDivider: true },
-    { to: "/menu", label: "View Menu", icon: <FaUtensils /> },
-    { to: "/order/:category", label: "Shop Now", icon: <FaShoppingBag /> },
-    { to: "/contact", label: "Contact Us", icon: <FaPhone /> },
+    // { to: "/menu", label: "View Menu", icon: <FaUtensils /> },
+    // { to: "/order/:category", label: "Shop Now", icon: <FaShoppingBag /> },
+    // { to: "/contact", label: "Contact Us", icon: <FaPhone /> },
   ];
 
   const handleSidebarToggle = () => {
