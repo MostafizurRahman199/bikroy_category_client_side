@@ -16,17 +16,15 @@ const Footer = () => {
 
   return (
     <div>
-      <footer className={ `  text-white   grid grid-cols-1 md:grid md:grid-cols-2 `}>
-        <div className="w-full bg-[#1F2937]  flex flex-col items-center justify-center p-10 gap-4">
+      <footer className={ `text-white   grid grid-cols-1 md:grid md:grid-cols-2 `}>
+        <div className="w-full bg-[#1dab8c]  flex flex-col items-center justify-center p-10 gap-4">
           <h3 className="text-2xl">Contact Us</h3>
           <p className="text-center">
-            123 ABS Street, Uni 21, Bangladesh <br />
-            +88 123456789 <br />
-            Mon - Fri: 08:00 - 22:00 <br />
-            Sat - Sun: 10:00 - 23:00 <br />
+          Level 11, MS Center, Plot 8 <br /> 
+          Bir Uttam AK Khandakar Rd, Dhaka 1212 <br />
           </p>
         </div>
-        <div className="w-full bg-[#111827]  flex flex-col items-center justify-center gap-4 p-10">
+        <div className="w-full bg-[#009877]  flex flex-col items-center justify-center gap-4 p-10">
           <h6 className="text-2xl">Follow Us</h6>
           <p>Join us on social media</p>
           <div className="grid grid-flow-col gap-4">
@@ -69,7 +67,7 @@ const Footer = () => {
       <footer className="footer footer-center bg-[#151515] text-white p-4">
         <aside>
           <p>
-            Copyright © {new Date().getFullYear()} - All right reserved by ACME
+            Copyright © {new Date().getFullYear()} - All right reserved by Bikroy
             Industries Ltd
           </p>
         </aside>

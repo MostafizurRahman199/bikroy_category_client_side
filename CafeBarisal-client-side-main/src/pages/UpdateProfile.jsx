@@ -48,7 +48,7 @@ const UpdateProfile = () => {
     return (
         <div className="min-h-screen  pt-20 px-4 flex justify-center items-start">
         <div className=' p-2 sm:p-4 rounded-2xl shadow-2xl' data-aos='zoom-in-left'>
-        <div className="max-w-4xl w-full  shadow-2xl shadow-[#D1A054]  rounded-2xl  p-8 flex items-center justify-center gap-2" data-aos='zoom-in-left'>
+        <div className="max-w-4xl w-full  shadow-2xl shadow-[#009877]  rounded-2xl  p-8 flex items-center justify-center gap-2" data-aos='zoom-in-left'>
                 <div className="flex-1">
                     <h2 className="font_header text-2xl sm:text-4xl font-bold mb-4 text-white ">Update Profile</h2>
                     <form onSubmit={handleUpdate}>
@@ -58,7 +58,7 @@ const UpdateProfile = () => {
                                 type="text"
                                 value={formData.displayName}
                                 onChange={(e) => setFormData({...formData, displayName: e.target.value})}
-                                className="text-black w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-[#D1A054]"
+                                className="text-black w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-[#009877]"
                             />
                         </div>
                         <div className="mb-4">
@@ -67,12 +67,12 @@ const UpdateProfile = () => {
                                 type="url"
                                 value={formData.photoURL}
                                 onChange={(e) => setFormData({...formData, photoURL: e.target.value})}
-                                className="text-black w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-[#D1A054]"
+                                className="text-black w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-[#009877]"
                             />
                         </div>
                         <button
                             type="submit"
-                            className="bg-[#D1A054] hover:bg-[#bd770e] px-4 py-2 sm:px-8 sm:py-3 rounded-3xl text-white sm:font-semibold transition-transform hover:scale-105 shadow-2xl"
+                            className="bg-[#009877] hover:bg-[#bd770e] px-4 py-2 sm:px-8 sm:py-3 rounded-3xl text-white sm:font-semibold transition-transform hover:scale-105 shadow-2xl"
                         >
                             Update Information
                         </button>

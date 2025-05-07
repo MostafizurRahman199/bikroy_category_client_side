@@ -47,12 +47,12 @@ const Profile = () => {
       className={`min-h-screen flex justify-center items-center `}
     >
       <div
-        className={`w-11/12 md:w-8/12 lg:w-6/12 shadow-2xl shadow-[#D1A054] rounded-2xl  p-8 ${darkMode == true ? "bg-black" : "bg-white "}`}
+        className={`w-11/12 md:w-8/12 lg:w-6/12 shadow-2xl shadow-[#009877] rounded-2xl  p-8 ${darkMode == true ? "bg-black" : "bg-white "}`}
         data-aos="zoom-in"
       >
         {/* Header */}
         {/* <div className="flex flex-col items-center text-center">
-          <h1 className="text-3xl md:text-4xl font-bold text-[#D1A054] mb-2">
+          <h1 className="text-3xl md:text-4xl font-bold text-[#009877] mb-2">
             Welcome to Your Profile
           </h1>
           <p className="text-gray-600">Manage your profile and updates effortlessly</p>
@@ -65,7 +65,7 @@ const Profile = () => {
             <Lottie animationData={frame} style={{ height: 200, width: 200 }} />
           </div> */}
           {/* Profile Picture */}
-          {/* <div className="w-fit mx-auto p-1 bg-gradient-to-r from-[#D1A054] to-[#a01011] rounded-full"> */}
+          {/* <div className="w-fit mx-auto p-1 bg-gradient-to-r from-[#009877] to-[#a01011] rounded-full"> */}
           <div className="w-fit mx-auto p-1 ">
             <img
               src={getProfileImage(user)}
@@ -75,7 +75,7 @@ const Profile = () => {
           </div>
           {/* User Details */}
           <div className="text-center mt-8">
-            <h2 className="text-2xl md:text-3xl font-bold text-[#D1A054]">
+            <h2 className="text-2xl md:text-3xl font-bold text-[#009877]">
               {user?.displayName}
             </h2>
             <p className="text-sm text-gray-600">{user?.email}</p>
@@ -103,7 +103,7 @@ const Profile = () => {
         <div className="mt-8 flex justify-center">
           <button
             onClick={handleUpdateClick}
-            className="bg-gradient-to-r from-[#D1A054] to-[#bd770e] text-white px-6 py-3 rounded-md font-semibold hover:scale-105 transition-transform"
+            className="bg-gradient-to-r from-[#009877] to-[#bd770e] text-white px-6 py-3 rounded-md font-semibold hover:scale-105 transition-transform"
           >
             Update Profile
           </button>

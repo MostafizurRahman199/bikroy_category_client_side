@@ -83,7 +83,7 @@ const Dashboard = () => {
     <div className="relative flex flex-col md:flex-row h-full min-h-screen">
       {/* Mobile Sidebar */}
       <button
-        className="fixed top-4 left-2 z-50 rounded-full bg-[#D1A054] text-white p-2  md:hidden"
+        className="fixed top-4 left-2 z-50 rounded-full bg-[#009877] text-white p-2  md:hidden"
         onClick={handleSidebarToggle}
       >
         {

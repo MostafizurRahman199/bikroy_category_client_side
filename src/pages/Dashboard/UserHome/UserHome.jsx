@@ -28,7 +28,7 @@
 //         </div>
 
 //         {/* Shop Card */}
-//         <div className="flex flex-row gap-4 items-center justify-center bg-gradient-to-r from-[#D1A054] to-gray-100 rounded-lg p-4">
+//         <div className="flex flex-row gap-4 items-center justify-center bg-gradient-to-r from-[#009877] to-gray-100 rounded-lg p-4">
 //           <FaShoppingCart className="text-5xl text-yellow-800 mb-2" />
 //           <div>
 //           <p className="text-4xl font-bold text-yellow-800">103</p>

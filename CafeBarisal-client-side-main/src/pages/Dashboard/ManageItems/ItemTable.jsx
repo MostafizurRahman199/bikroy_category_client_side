@@ -16,7 +16,7 @@ const ItemTable = ({ menuData, handleModalOpen, handleDelete }) => {
     <div className="hidden md:block overflow-x-auto md:h-[300px] lg:h-[400px] overflow-auto">
       <table className="table-auto w-full text-left border-collapse">
         <thead>
-          <tr className="bg-[#D1A054] text-white font-normal">
+          <tr className="bg-[#009877] text-white font-normal">
             <th className="py-2 px-4 text-center">No.</th>
             <th className="py-2 px-4 text-center">Image</th>
             <th className="py-2 px-4 text-center">Name</th>

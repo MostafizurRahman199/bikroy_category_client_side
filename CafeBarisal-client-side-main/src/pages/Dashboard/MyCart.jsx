@@ -88,7 +88,7 @@ const MyCart = () => {
             No orders added yet!
           </p>
           <Link to={"/order/:category"}
-            className="mt-4 px-6 py-2 bg-[#D1A054] text-white rounded-lg shadow-md font-semibold hover:bg-[#b5853a] transition-all"
+            className="mt-4 px-6 py-2 bg-[#009877] text-white rounded-lg shadow-md font-semibold hover:bg-[#b5853a] transition-all"
             onClick={() => console.log("Redirect to shop")}
           >
             Browse Menu
@@ -114,9 +114,9 @@ const MyCart = () => {
           </h2>
         </div>
        {
-        cartData?.length > 0 ? <Link to={"/dashboard/payment"} className="bg-[#D1A054] text-white px-6 py-2 rounded-lg  shadow-md hover:bg-[#b5853a]">
+        cartData?.length > 0 ? <Link to={"/dashboard/payment"} className="bg-[#009877] text-white px-6 py-2 rounded-lg  shadow-md hover:bg-[#b5853a]">
         Pay
-      </Link> : <Button onClick={showMessage} className="bg-[#D1A054] text-white px-6 py-2 rounded-lg  shadow-md hover:bg-[#b5853a]">
+      </Link> : <Button onClick={showMessage} className="bg-[#009877] text-white px-6 py-2 rounded-lg  shadow-md hover:bg-[#b5853a]">
         Pay
       </Button>
        }
@@ -126,7 +126,7 @@ const MyCart = () => {
       <div className="hidden md:block overflow-x-auto   max-h-[calc(100vh-200px)] overflow-auto ">
         <table className="table-auto w-full text-left border-collapse ">
           <thead>
-            <tr className="bg-[#D1A054] text-white font-normal">
+            <tr className="bg-[#009877] text-white font-normal">
               <th className="py-2 px-4 text-center">ITEM IMAGE</th>
               <th className="py-2 px-4 text-center">QUANTITY</th>
               <th className="py-2 px-4 text-center">CATEGORY</th>

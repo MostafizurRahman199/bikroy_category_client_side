@@ -52,7 +52,7 @@ const ContactForm = ({ name="", email="" }) => {
               id="name"
               type="text"
               placeholder="Enter your name"
-              className="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-[#D1A054]"
+              className="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-[#009877]"
               readOnly={!!name} // Make read-only if user is logged in
             />
             {errors.name && (
@@ -77,7 +77,7 @@ const ContactForm = ({ name="", email="" }) => {
               id="email"
               type="email"
               placeholder="Enter your email"
-              className="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-[#D1A054]"
+              className="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-[#009877]"
               readOnly={!!email} // Make read-only if user is logged in
             />
             {errors.email && (
@@ -101,7 +101,7 @@ const ContactForm = ({ name="", email="" }) => {
             id="phone"
             type="tel"
             placeholder="Enter your phone number"
-            className="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-[#D1A054]"
+            className="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-[#009877]"
           />
           {errors.phone && (
             <p className="text-red-500 text-sm mt-1">{errors.phone.message}</p>
@@ -121,7 +121,7 @@ const ContactForm = ({ name="", email="" }) => {
             id="message"
             rows="4"
             placeholder="Write your message here"
-            className="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-[#D1A054]"
+            className="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-[#009877]"
           ></textarea>
           {errors.message && (
             <p className="text-red-500 text-sm mt-1">
@@ -135,7 +135,7 @@ const ContactForm = ({ name="", email="" }) => {
           <div className="flex justify-center items-center">
             <button
               type="submit"
-              className={`w-full flex items-center justify-center gap-2 md:w-auto bg-[#D1A054] text-white py-3 px-6 hover:bg-[#D1A054] transition-all `}
+              className={`w-full flex items-center justify-center gap-2 md:w-auto bg-[#009877] text-white py-3 px-6 hover:bg-[#009877] transition-all `}
             >
               <p className="text-xl">Send Message </p>
               <IoIosSend className="text-3xl" />

@@ -33,12 +33,12 @@ const InfoCards = () => {
           key={index}
           className="flex flex-col border   rounded-lg  w-full max-w-sm h-60 bg-white"
         >
-          <div className="bg-[#D1A054] text-white flex justify-center items-center h-20 py-4">
+          <div className="bg-[#009877] text-white flex justify-center items-center h-20 py-4">
             {info.icon}
           </div>
           <div className=" bg-gray-100 m-8 text-center flex h-full flex-col justify-center items-center border-2">
             <div>
-            <h3 className="text-lg font-bold mb-2" style={{ color: "#D1A054" }}>
+            <h3 className="text-lg font-bold mb-2" style={{ color: "#009877" }}>
               {info.title}
             </h3>
             <p className="text-gray-600">{info.detail}</p>

@@ -188,18 +188,13 @@ const Navbar = () => {
          
 
         {
-            user && isAdmin && <> <Link to="/dashboard/admin-home" className={getLinkStyle('/dashboard')} onClick={() => setActiveLink('/dashboard')}>
+            user && isAdmin && <> <Link to="/dashboard/manage-product-title" className={getLinkStyle('/dashboard')} onClick={() => setActiveLink('/dashboard')}>
             <VscOpenPreview className="lg:inline-block mr-1"/> Dashboard
           </Link>
             </>
         }
 
-        {
-          user && !isAdmin &&  <>  <Link to="/dashboard/user-home" className={getLinkStyle('/dashboard')} onClick={() => setActiveLink('/dashboard')}>
-          <VscOpenPreview className="lg:inline-block mr-1"/> Dashboard
-         </Link>
-        </> 
-        }
+       
      
 
         
@@ -268,27 +263,13 @@ const Navbar = () => {
        </div>
          </div>
                 
-                 
-
-
-              
-
-
-
-
-                  
-             
-  
-              
-
-
-
+                
 
           {/* Mobile menu button - Updated styling */}
           <div className="md:hidden flex items-center ml-2">
             <button 
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="inline-flex items-center justify-center p-1 rounded-md text-white hover:text-white  focus:outline-none focus:ring-1 focus:ring-inset focus:ring-white"
+              className="inline-flex items-center justify-center p-1 rounded-md text-black hover:text-white  focus:outline-none focus:ring-1 focus:ring-inset focus:ring-white"
             >
               <span className="sr-only">Open main menu</span>
               <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -305,48 +286,50 @@ const Navbar = () => {
    
       <div 
         className={`
-          md:hidden fixed  top-16 bg-white shadow-lg
+          md:hidden fixed  top-16  text-black shadow-lg
           transform transition-all duration-300 ease-in-out z-100
           ${isMobileMenuOpen ? 'translate-y-0 opacity-100 visible' : '-translate-y-full opacity-0 invisible'}
         `}
       >
       
-        <div className="absolute inset-0 bg-blue-50" />
+        <div className="absolute inset-0 bg-blue-50 text-black" />
         
       
         <div className="relative px-4 pt-2 pb-3 space-y-2">
+          
+          
           <Link 
             to="/" 
-            className={`block ${getLinkStyle('/')}`}
+            className={`block text-[#009877]`}
             onClick={() => {
               setActiveLink('/');
               setIsMobileMenuOpen(false);
             }}
           >
            
-           <FaHome className="inline-block mr-1" /> Home
+           <FaHome className="inline-block mr-1 " /> Home
+           
+          </Link>
+          
+          <Link 
+            to="/dashboard/manage-product-title" 
+            className={`block text-[#009877]`}
+            onClick={() => {
+              setActiveLink('/dashboard');
+              setIsMobileMenuOpen(false);
+            }}
+          >
+           
+           <FaHome className="inline-block mr-1" /> Dashboard
            
           </Link>
 
-         
-
-
-       
-
-
-         
         
-
-          
-          
-         
-  
-
 
        { user && <>
          <Link 
             to="/my-profile" 
-            className={`block ${getLinkStyle('/my-profile')}`}
+            className={`block text-[#009877]`}
             onClick={() => {
               setActiveLink('/my-profile');
               setIsMobileMenuOpen(false);
