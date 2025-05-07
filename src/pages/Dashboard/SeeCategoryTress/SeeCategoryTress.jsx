@@ -2,8 +2,10 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Swal from 'sweetalert2';
+import { useDarkMode } from "../../../Context/DarkModeContext";
 
 const url = import.meta.env.VITE_API_BASE_URL;
+
 
 // Arrow icons using SVG (no external package)
 const ChevronRight = () => (
@@ -35,6 +37,8 @@ const TreeNode = ({ node, level = 0, refreshTree }) => {
 
     const [editing, setEditing] = useState(false);
     const [editName, setEditName] = useState("");
+
+   
 
 
 
@@ -190,7 +194,9 @@ const TreeNode = ({ node, level = 0, refreshTree }) => {
 
 
 const SeeCategoryTress = () => {
-  
+
+
+  const { darkMode } = useDarkMode();
     const [treeData, setTreeData] = useState([]);
   
     const fetchAndBuildTree = async () => {
@@ -224,7 +230,9 @@ const SeeCategoryTress = () => {
   
     return (
       <div className="p-6 w-11/12 mx-auto bg-white rounded-2xl shadow-lg mt-10 border border-gray-200">
-        <h2 className="text-3xl font-bold mb-6 border-b pb-2">📂 Category Tree</h2>
+        <h2 className={`${
+      darkMode ? 'text-[#1a1919]' : 'text-black'
+    } text-3xl font-bold mb-6 border-b pb-2`}>📂 Category Tree</h2>
         {treeData.length === 0 ? (
           <p className="text-gray-500">No categories available.</p>
         ) : (

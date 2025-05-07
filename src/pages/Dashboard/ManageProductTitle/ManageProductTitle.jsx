@@ -7,7 +7,7 @@ import Swal from 'sweetalert2';
 const url = import.meta.env.VITE_API_BASE_URL;
 
 const ManageProductTitle = () => {
-  
+
   const [searchTerm, setSearchTerm] = useState('');
   const [category, setCategory] = useState(null);
   const [children, setChildren] = useState([]);
@@ -96,7 +96,7 @@ const ManageProductTitle = () => {
 
   return (
     <div className="p-6 max-w-2xl mx-auto">
-      <h1 className="text-2xl font-bold mb-4">Manage Categories</h1>
+      <h1 className="text-2xl font-bold mb-4 text-black">Manage Categories</h1>
 
       <div className="mb-4">
         <input
@@ -104,9 +104,9 @@ const ManageProductTitle = () => {
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
           placeholder="Search category..."
-          className="border px-3 py-2 rounded mr-2"
+          className="border px-3 py-2 rounded mr-2 text-black"
         />
-        <button onClick={fetchCategory} className="bg-blue-500 text-white px-4 py-2 rounded">Search</button>
+        <button onClick={fetchCategory} className="bg-blue-500 text-white px-4 py-2 rounded ">Search</button>
       </div>
 
       {category && (
@@ -125,7 +125,7 @@ const ManageProductTitle = () => {
                       )
                     )
                   }
-                  className="border px-3 py-2 rounded flex-1"
+                  className="border px-3 py-2 rounded flex-1 text-black"
                 />
                 <button onClick={() => updateChild(child._id, child.name)} className="bg-yellow-500 px-3 py-2 rounded">Save</button>
                 <button onClick={() => deleteChild(child._id)} className="bg-red-500 text-white px-3 py-2 rounded">Delete</button>
@@ -138,7 +138,7 @@ const ManageProductTitle = () => {
                 value={newTitle}
                 onChange={(e) => setNewTitle(e.target.value)}
                 placeholder="New child title"
-                className="border px-3 py-2 rounded mr-2"
+                className="border px-3 py-2 rounded mr-2 text-black"
               />
               <button onClick={createChild} className="bg-green-500 text-white px-4 py-2 rounded">Add Child</button>
             </div>
@@ -147,13 +147,13 @@ const ManageProductTitle = () => {
       )}
 
       <div className="mt-8">
-        <h3 className="text-lg font-semibold">Create New L1 Category</h3>
+        <h3 className="text-lg font-semibold text-black">Create New L1 Category</h3>
         <input
           type="text"
           value={newL1}
           onChange={(e) => setNewL1(e.target.value)}
           placeholder="New L1 title"
-          className="border px-3 py-2 rounded mr-2"
+          className="border px-3 py-2 rounded mr-2 text-black"
         />
         <button onClick={createL1Category} className="bg-purple-500 text-white px-4 py-2 rounded">Create</button>
       </div>

@@ -144,7 +144,7 @@ const AllUsers = () => {
           <table className="table-auto w-full text-left border-collapse">
             <thead>
               <tr className="bg-[#149777] text-white font-normal">
-                <th className="py-2 px-4 text-center">Image</th>
+                <th className="py-2 px-4 text-center ">Image</th>
                 <th className="py-2 px-4 text-center">Name</th>
                 <th className="py-2 px-4 text-center">Email</th>
                 <th className="py-2 px-4 text-center">Created At</th>
@@ -164,15 +164,15 @@ const AllUsers = () => {
                       />
                     </div>
                   </td>
-                  <td className="py-4 px-4 text-center">{item.name}</td>
-                  <td className="py-4 px-4 text-center">{item.email}</td>
-                  <td className="py-4 px-4 text-center">
+                  <td className="py-4 px-4 text-center text-black">{item.name}</td>
+                  <td className="py-4 px-4 text-center text-black">{item.email}</td>
+                  <td className="py-4 px-4 text-center text-black">
                     {new Date(item.createAt).toLocaleDateString()}
                   </td>
                   <td className="py-4 px-4 text-center">
                     {/* Role Dropdown */}
                     <select
-                      className="bg-gray-100 border rounded-lg p-2"
+                      className="bg-gray-100 text-[#149777] border rounded-lg p-2"
                       value={item.role}
                       onChange={(e) => handleRoleChange(item._id, e.target.value)}
                     >
