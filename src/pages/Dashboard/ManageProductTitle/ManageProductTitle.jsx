@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import Swal from 'sweetalert2';
 
-const url = import.meta.env.VITE_API_BASE_URL;
+const url = "https://bikroycategory.vercel.app";
 
 const ManageProductTitle = () => {
 

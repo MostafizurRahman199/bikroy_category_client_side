@@ -6,7 +6,8 @@ import { useDarkMode } from '../../../Context/DarkModeContext';
 
 const SearchCategory = () => {
   
-  const url = import.meta.env.VITE_API_BASE_URL;
+  // const url = import.meta.env.VITE_API_BASE_URL;
+  const url = "https://bikroycategory.vercel.app";
 
   const [query, setQuery] = useState('');
   const [categories, setCategories] = useState([]);
