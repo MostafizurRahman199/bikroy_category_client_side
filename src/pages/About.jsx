@@ -28,7 +28,7 @@ const About = () => {
         <div className="flex flex-col items-center">
          <div className="flex flex-col items-center gap-4">
          <div
-            className="w-fit rounded-full p-1  bg-gradient-to-r from-[#151515] to-[#a01011]"
+            className="w-fit rounded-full p-1  bg-gradient-to-r from-[#151515] to-[#009877]"
             data-aos="zoom-in"
           >
             <img
@@ -43,7 +43,7 @@ const About = () => {
             />
           </div>
           <h1
-            className="text-xl sm:text-2xl md:text-3xl font-bold mb-2 text-[#a01011]"
+            className="text-xl sm:text-2xl md:text-3xl font-bold mb-2 text-[#009877]"
             data-aos="zoom-in"
           >
             Md. Mostafizur Rahman

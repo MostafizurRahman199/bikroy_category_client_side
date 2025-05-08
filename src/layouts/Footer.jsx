@@ -67,8 +67,7 @@ const Footer = () => {
       <footer className="footer footer-center bg-[#151515] text-white p-4">
         <aside>
           <p>
-            Copyright © {new Date().getFullYear()} - All right reserved by Bikroy
-            Industries Ltd
+            Copyright © {new Date().getFullYear()} - All right reserved by Bikroy.
           </p>
         </aside>
       </footer>

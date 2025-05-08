@@ -22,7 +22,7 @@ const MainLayout = () => {
 
       {loading ? (
         <div className="flex justify-center items-center min-h-screen">
-          <FaSpinner className="animate-spin text-4xl text-[#a01011]" />
+          <FaSpinner className="animate-spin text-4xl text-[#009877]" />
         </div>
       ) : (
         <>

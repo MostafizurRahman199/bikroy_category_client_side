@@ -1,6 +1,6 @@
 color theme
 
-#a01011 (normal)
+#009877 (normal)
 
 #0D7C66 (deep)
 

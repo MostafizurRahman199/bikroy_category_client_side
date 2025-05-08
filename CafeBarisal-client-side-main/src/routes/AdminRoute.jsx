@@ -30,7 +30,7 @@ const AdminRoute = ({ children }) => {
   if (loading || adminLoading) {
     return (
       <div className="min-h-screen flex items-center justify-center">
-        <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-[#a01011]"></div>
+        <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-[#009877]"></div>
       </div>
     );
   }

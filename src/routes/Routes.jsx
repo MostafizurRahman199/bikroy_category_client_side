@@ -37,66 +37,22 @@ const router = createBrowserRouter([
         element: (
           <>
             <Helmet>
-              <title>CafeBarisal - Home</title>
+              <title>Bikroy Category - Home</title>
             </Helmet>
             <Home></Home>
           </>
         ),
       },
-      {
-        path: "/menu",
-        element: (
-          <>
-            <Helmet>
-              <title>CafeBarisal - Menu</title>
-            </Helmet>
-            <MenuPage></MenuPage>
-          </>
-        ),
-      },
-      {
-        path: "/contact",
-        element: (
-          <>
-            <Helmet>
-              <title>CafeBarisal - Contact</title>
-            </Helmet>
-            <Contact></Contact>
-          </>
-        ),
-      },
-      {
-        path: "/order/:category",
-        element: (
-          <>
-            <Helmet>
-              <title>CafeBarisal - Order Food</title>
-            </Helmet>
-            <Order></Order>
-          </>
-        ),
-      },
+    
 
       {
         path: "/register",
         element: (
           <>
             <Helmet>
-              <title>CafeBarisal - Register</title>
+              <title>Bikroy Category - Register</title>
             </Helmet>
             <Register />
-          </>
-        ),
-      },
-
-      {
-        path: "/ManageMyPostRequest",
-        element: (
-          <>
-            <Helmet>
-              <title>CafeBarisal - My Volunteer Need Post</title>
-            </Helmet>
-            <PrivateRoute>{/* something */}</PrivateRoute>
           </>
         ),
       },
@@ -106,7 +62,7 @@ const router = createBrowserRouter([
         element: (
           <>
             <Helmet>
-              <title>CafeBarisal - Login</title>
+              <title>Bikroy Category - Login</title>
             </Helmet>
             <Login />
           </>
@@ -118,7 +74,7 @@ const router = createBrowserRouter([
         element: (
           <>
             <Helmet>
-              <title>CafeBarisal - Forgot Password</title>
+              <title>Bikroy Category - Forgot Password</title>
             </Helmet>
             <ForgetPassword />
           </>
@@ -129,7 +85,7 @@ const router = createBrowserRouter([
         element: (
           <>
             <Helmet>
-              <title>CafeBarisal - My Profile</title>
+              <title>Bikroy Category - My Profile</title>
             </Helmet>
             <PrivateRoute>
               <Profile />
@@ -143,7 +99,7 @@ const router = createBrowserRouter([
         element: (
           <>
             <Helmet>
-              <title>CafeBarisal - Update Profile</title>
+              <title>Bikroy Category - Update Profile</title>
             </Helmet>
             <PrivateRoute>
               <UpdateProfile />
@@ -158,25 +114,13 @@ const router = createBrowserRouter([
     element: <Dashboard />,
     children: [
     
-      {
-        path: "payment",
-        element: (
-          <>
-            <Helmet>
-              <title>CafeBarisal - Payment</title>
-            </Helmet>
-            <PrivateRoute>
-              <PaymentParent></PaymentParent>
-            </PrivateRoute>
-          </>
-        ),
-      },
+    
       {
         path: "user-home",
         element: (
           <>
             <Helmet>
-              <title>CafeBarisal - User Home</title>
+              <title>Bikroy Category - User Home</title>
             </Helmet>
             <PrivateRoute>
               <UserHome></UserHome>
@@ -189,7 +133,7 @@ const router = createBrowserRouter([
         element: (
           <>
             <Helmet>
-              <title>CafeBarisal - Admin Home</title>
+              <title>Bikroy Category - Admin Home</title>
             </Helmet>
             <AdminRoute>
               <AdminHome></AdminHome>
@@ -202,7 +146,7 @@ const router = createBrowserRouter([
         element: (
           <>
             <Helmet>
-              <title>Bikroy - Manage Product Title</title>
+              <title>Bikroy Category - Manage Product Title</title>
             </Helmet>
             <AdminRoute>
               <ManageProductTitle></ManageProductTitle>
@@ -215,7 +159,7 @@ const router = createBrowserRouter([
         element: (
           <>
             <Helmet>
-              <title>Bikroy - All Category</title>
+              <title>Bikroy Category - All Category</title>
             </Helmet>
             <AdminRoute>
               <SeeCategoryTress></SeeCategoryTress>
@@ -224,57 +168,14 @@ const router = createBrowserRouter([
         ), // Explicit route for /dashboard/user-home
       },
       {
-        path: "reservation",
-        element: <div>Reservation Page</div>, // Replace with your actual component, e.g., <Reservation />
-      },
-      {
-        path: "payment-history",
-        element: <PaymentHistory></PaymentHistory>, // Replace with your actual component, e.g., <PaymentHistory />
-      },
-      {
-        path: "my-cart",
-        element: <MyCart></MyCart>, // Replace with your actual component, e.g., <MyCart />
-      },
-     
-      {
-        path: "add-review",
-        element: (
-          <>
-            <Helmet>
-              <title>CafeBarisal - Add Review</title>
-            </Helmet>
-            <PrivateRoute>
-              <AddReview></AddReview>
-            </PrivateRoute>
-          </>
-        ), // Explicit route for /dashboard/user-home
-      },
-      {
-        path: "my-booking",
-        element: <div>My Booking Page</div>, // Replace with your actual component, e.g., <MyBooking />
-      },
-      {
         path: "all-users",
         element: (
           <>
             <Helmet>
-              <title>CafeBarisal - All Users</title>
+              <title>Bikroy Category - All Users</title>
             </Helmet>
             <AdminRoute>
               <AllUsers></AllUsers>
-            </AdminRoute>
-          </>
-        ),
-      },
-      {
-        path: "add-menu-item",
-        element: (
-          <>
-            <Helmet>
-              <title>CafeBarisal - Add Menu Item</title>
-            </Helmet>
-            <AdminRoute>
-              <AddMenuItem></AddMenuItem>
             </AdminRoute>
           </>
         ),
@@ -284,7 +185,7 @@ const router = createBrowserRouter([
         element: (
           <>
             <Helmet>
-              <title>CafeBarisal - Add Menu Item</title>
+              <title>Bikroy Category - Add Menu Item</title>
             </Helmet>
             <AdminRoute>
               <ManageItems></ManageItems>
@@ -299,7 +200,7 @@ const router = createBrowserRouter([
     element: (
       <>
         <Helmet>
-          <title>CafeBarisal - Error</title>
+          <title>Bikroy Category - Error</title>
         </Helmet>
         <ErrorPage />
       </>

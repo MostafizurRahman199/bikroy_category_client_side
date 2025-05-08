@@ -65,7 +65,7 @@ const Profile = () => {
             <Lottie animationData={frame} style={{ height: 200, width: 200 }} />
           </div> */}
           {/* Profile Picture */}
-          {/* <div className="w-fit mx-auto p-1 bg-gradient-to-r from-[#009877] to-[#a01011] rounded-full"> */}
+          {/* <div className="w-fit mx-auto p-1 bg-gradient-to-r from-[#009877] to-[#009877] rounded-full"> */}
           <div className="w-fit mx-auto p-1 ">
             <img
               src={getProfileImage(user)}
@@ -91,7 +91,7 @@ const Profile = () => {
           ].map(({ label, value }, idx) => (
             <div
               key={idx}
-              className="flex flex-col items-center justify-center bg-[#a01011] text-white w-28 h-28 rounded-md shadow-md"
+              className="flex flex-col items-center justify-center bg-[#009877] text-white w-28 h-28 rounded-md shadow-md"
             >
               <p className="text-xl font-bold">{value}</p>
               <p className="text-sm">{label}</p>
